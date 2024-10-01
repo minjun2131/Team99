@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>현희의 블로그</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div id="header">
@@ -19,20 +20,26 @@
         <div class="info_title">
             <div class="info_input">
             <div class="info_input_box">
-                <input type="text">
-                <input type="text">
-                <button>추가</button>
+                <input class="input_comment" type="text">
+                <input class="input_pwd" type="text">
+                <button class="add_btn">추가</button>
             </div>
         </div>
         <div class="info_user">
             <div class="info_form"></div>
             <div class="info_comment">
-                <div></div>
-                <div></div>
-                <div></div>
             </div>
         </div>
     </div>
     </section>
+    <div class="modal">
+      <div class="modal_popup">
+        <h3>수정할 내용을 입력해주세요!</h3>
+        <input class="modal_input" type="text" required />
+        <button type="button" class="close_btn">확인</button>
+      </div>
+    </div>
+  </div>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>
