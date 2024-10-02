@@ -273,3 +273,67 @@ nav span {
   overflow: auto;
   margin-bottom: 20px;
 }
+
+#header {
+  width: 100%;
+  background-color: #fcfcfc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header_warp {
+  width: 80%;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img_a_tag > img {
+  width: 150px;
+}
+
+.tw_wrapper {
+  width: 600px;
+  height: 15%;
+  display: flex;
+  gap: 15px;
+}
+.todays_box,
+.weathers_box {
+  border: 5px solid white;
+  border-radius: 25px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#nav {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav > a {
+  margin-right: 25px;
+  text-decoration: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: rgb(37, 147, 255);
+}
