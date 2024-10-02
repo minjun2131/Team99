@@ -82,3 +82,7 @@
   display: flex;
   gap: 30px;
 }
+
+.contest_hashtag {
+  color: rgb(37, 147, 255);
+}
