@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +10,29 @@
     <div id="wrap">
         <div id="header">
             <header>
+                <div>
                 <h1><img src='img/h1.gif' href="로고_이미지"/></h1>
-                <div id="nav"><nav><span>Team</span><span>Members</span><span>News</span></nav></div>
+            </div>
+            <!-- 날씨, 시간 -->
+            <div class="tw_wrapper">
+                <div class="todays_box">
+                  <span class="today"></span>
+                  <span class="clock"></span>
+                </div>
+                <div class="weathers_box">
+                  <span class="city"></span>
+                  <span class="weather"></span>
+                  <span class="temperature"></span>
+                </div>
+              </div>
+              <!-- 요기까지 -->
+                <div id="nav">
+                    <nav>
+                        <span>Team</span>
+                        <span>Members</span>
+                        <span>Blogs</span>
+                    </nav>
+                </div>
             </header>
         </div>
         <div id="container">
@@ -61,5 +81,8 @@
             © 2024 by Graphic & Art. Proudly created with min.jun
         </footer>
     </div>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/script.js"></script>
+    <script src="./JS/weather.js"></script>    
 </body>
-<script src="script.js"></script>
+</html>

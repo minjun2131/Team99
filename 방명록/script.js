@@ -91,7 +91,6 @@ const modal = document.querySelector(".modal");
 const modalClose = document.querySelector(".close_btn");
 const modalYes = document.querySelector(".yes_btn");
 
-
 modalClose.addEventListener("click", function () {
   modal.classList.remove("on");
 });
