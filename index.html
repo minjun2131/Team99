@@ -5,15 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <div id="wrap">
+        <!-- header 시작 -->
         <div id="header">
-            <header>
-                <h1><img src='img/h1.gif' href="로고_이미지"/></h1>
-                <div id="nav"><nav><span>Team</span><span>Members</span><span>News</span></nav></div>
+            <header class="header_warp">
+                <!-- 비둘기 -->
+                <div class="header_img_box">
+                   <a class="img_a_tag" href=""><img src='img/h1.gif'/></a>
+            </div>
+            <!-- 시간, 날짜 -->
+            <div class="tw_wrapper">
+                <div class="todays_box">
+                  <span class="today"></span>
+                  <span class="clock"></span>
+                </div>
+                <div class="weathers_box">
+                  <span class="city"></span>
+                  <span class="weather"></span>
+                  <span class="temperature"></span>
+                </div>
+              </div>
+              <!-- 링크 -->
+                <div id="nav">
+                        <a href="./members.html">Members</a>
+                        <a href="./blogs.html">Blogs</a>
+                    </div>                    
             </header>
+             <!-- header 끝 -->
         </div>
         <div id="container">
             <container>
@@ -61,5 +82,9 @@
             © 2024 by Graphic & Art. Proudly created with min.jun
         </footer>
     </div>
+<script src="./JS/index.js"></script>
+<script src="./JS/clock.js"></script>
+<script src="./JS/weather.js"></script>
+
 </body>
-<script src="script.js"></script>
+</html>
