@@ -177,3 +177,9 @@ button {
 .link_img {
   width: 25px;
 }
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
