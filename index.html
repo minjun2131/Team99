@@ -4,34 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>[1조]흑백요리사</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index2.css">
+
 </head>
+
 <body>
     <div id="wrap">
         <div id="header">
             <header>
                 <div>
-                <h1><img src='img/h1.gif' href="로고_이미지"/></h1>
-            </div>
-            <div class="tw_wrapper">
-                <div class="todays_box">
-                  <span class="today"></span>
-                  <span class="clock"></span>
+                    <h1><img src='img/h1.gif' href="로고_이미지" /></h1>
                 </div>
-                <div class="weathers_box">
-                  <span class="city"></span>
-                  <span class="weather"></span>
-                  <span class="temperature"></span>
+                <div class="tw_wrapper">
+                    <div class="todays_box">
+                        <span class="today"></span>
+                        <span class="clock"></span>
+                    </div>
+                    <div class="weathers_box">
+                        <span class="city"></span>
+                        <span class="weather"></span>
+                        <span class="temperature"></span>
+                    </div>
                 </div>
-              </div>
                 <div id="nav">
                     <nav>
                         <a href="./members.html">Members</a>
                         <a href="./blogs.html">Blogs</a>
                     </nav>
-                    </div>
-                    
+                </div>
+
             </header>
         </div>
         <div id="container">
@@ -45,6 +48,33 @@
                 <section id="con-wrap">
                     <div class="cont">
                         <h2>Self Introduction</h2>
+                        <div id="all">
+                            <div id="card">
+                                <img id=mypic src="https://upload.wikimedia.org/wikipedia/ko/d/d4/%EC%9A%94%EC%8B%9C.png">
+                                <div id="text">
+                                    <div id="titles">
+                                        <div id="title1">I know you are scared,</div>
+                                        <div id="title2">but you can handle this.</div>
+                                    </div>
+                                    <div id="contents" class="specialani">
+                                        <div id="mythings">
+                                            <div id="name">강민정</div>
+                                            <div id="greeting">안녕하세요.</div>
+                                        </div>
+                                        <button id="close">✕</button>
+                                    </div>
+                                    <button class="hidden" id="open">더 알아보기</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="con con-right">
+                            <div class="text">
+                                <h3>자기소개</h3>
+                                <p>내용</p>
+                            </div>
+                            <div class="chk"></div>
+                        </div>
                         <div class='con con-left'>
                             <div class="chk"></div>
                             <div class="text">
@@ -57,21 +87,7 @@
                                 <h3>자기소개</h3>
                                 <p>내용</p>
                             </div>
-                            <div class="chk"></div>     
-                        </div>
-                        <div class='con con-left'>
                             <div class="chk"></div>
-                            <div class="text">
-                                <h3>자기소개</h3>
-                                <p>내용</p>
-                            </div>
-                        </div>
-                        <div class="con con-right">
-                            <div class="text">
-                                <h3>자기소개</h3>
-                                <p>내용</p>
-                            </div>
-                            <div class="chk"></div>     
                         </div>
                     </div>
                 </section>
@@ -80,9 +96,11 @@
             © 2024 by Graphic & Art. Proudly created with min.jun
         </footer>
     </div>
-<script src="./JS/index.js"></script>
-<script src="./JS/clock.js"></script>
-<script src="./JS/weather.js"></script>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/weather.js"></script>
+    <script src="./JS/index2.js"></script>
 
 </body>
+
 </html>
