@@ -27,17 +27,19 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-$("#cheer").click(async function () {
-  let comment = $("#compliments").val();
-  let pwd = $(".input_password").val();
+$("#save").click(async function () {
+  let userId = $("#id").val();
+  let userPwd = $("#pw").val();
+  let comment = $("#commentValue").val();
 
   let doc = {
+    id: userId,
     comment: comment,
-    password: pwd,
+    pwd: userPwd,
     timeStamp: new Date().getTime(),
   };
-  if (!comment) {
-    alert("댓글을 입력하세요.");
+  if (!userId || !userPwd || !comment) {
+    alert("값을 입력하세요.");
   } else {
     await addDoc(collection(db, "comment"), doc);
     alert("저장완료");
@@ -53,21 +55,28 @@ let docs = await getDocs(
 docs.forEach((doc) => {
   let row = doc.data();
   let id = doc.id;
+  let userId = row["id"];
   let comment = row["comment"];
-  let temp_html = `
-          <div id="user_comment_box">
-        <div id="user_comment_info">
-          <span id="user_comment">${comment}</span>
-        </div>
-        <div id="remove_btn_box">       
-        <button class="modify_btn" id="${id}">수정</button>      
-        <button class="remove_btn" id="${id}">제거</button>          
-        </div>
-      </div>`;
-  $("#user_comment_wrapper").append(temp_html);
+
+  let commentlist = document.querySelector("#commentlist");
+  let newli = document.createElement("li");
+  let newbtn = document.createElement("button");
+  let newbtn2 = document.createElement("button");
+  newli.classList.add("newcomm");
+  newbtn.classList.add("newbtn");
+  newbtn.id = doc.id;
+  newbtn2.classList.add("newbtn2");
+  newbtn.innerText = "❌";
+  newbtn2.innerText = "✏️";
+
+  newli.textContent = `${userId} : ${comment}`;
+
+  newli.appendChild(newbtn);
+  newli.appendChild(newbtn2);
+  commentlist.appendChild(newli);
 });
 
-const removeBtn = document.querySelectorAll(".remove_btn");
+const removeBtn = document.querySelectorAll(".newbtn");
 for (let index = 0; index < removeBtn.length; index++) {
   removeBtn[index].addEventListener("click", async function (e) {
     const userId = e.target.id;
@@ -83,30 +92,34 @@ for (let index = 0; index < removeBtn.length; index++) {
 }
 
 const modal = document.querySelector(".modal");
-const modalCheckBtn = document.querySelector(".yes_btn");
 const modalClose = document.querySelector(".close_btn");
-const modifyBtn = document.querySelectorAll(".modify_btn");
-const modalInput = document.querySelector(".modal_input");
+const yesBtn = document.querySelector(".yes_btn");
+const modifyBtn = document.querySelectorAll(".newbtn2");
+
+const modalInput = document.querySelector("#pwcheck");
+const modalInputPwd = document.querySelector(".modal_input_pwd");
 
 for (let index = 0; index < modifyBtn.length; index++) {
   modifyBtn[index].addEventListener("click", function () {
+    console.log("1");
     modalInput.setAttribute("data-comment-id", modifyBtn[index].id);
     modal.style.display = "block";
   });
 }
 
 modalClose.addEventListener("click", async function () {
-  console.log("1");
-  let comment = $(".modal_input").val();
-  const modalId = modalInput.dataset.commentId;
+  let comment = $(".pwcheck").val();
+  const modalId = modalInputPwd.dataset.commentId;
   let docs = await getDocs(collection(db, "comment"));
   docs.forEach(async (e) => {
-    if (modalId === e.id) {
+    if (modalId === e.id && modalInputPwd.value == e.data().pwd) {
       const docRef = doc(db, "comment", e.id);
       await updateDoc(docRef, { comment: comment });
       modal.style.display = "none";
       alert("수정완료!");
       window.location.reload();
+    } else if (modalId === e.id && modalInputPwd.value !== e.data().pwd) {
+      alert("비밀번호를 확인해주세요.");
     }
   });
 });
