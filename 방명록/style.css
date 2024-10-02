@@ -1,244 +1,275 @@
 /*################ 초기값 설정 #############*/
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a:link,
 a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    border: none;
+  border: none;
 }
-
 
 /*############### 스타일 설정 #############*/
 #wrap {
-    width: 100%;
-    min-width: 800px;
+  width: 100%;
+  min-width: 800px;
+  height: 1500px;
 }
 
 #header {
-    width: 100%;
-    background-color: #fcfcfc;
+  width: 100%;
+  background-color: #fcfcfc;
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 header {
-    width: 80%;
-    padding: 0 10%;
-    display: flex;
-    justify-content: space-between;
+  width: 80%;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
 }
 
 header img {
-    width: 150px;
+  width: 150px;
 }
 
 #nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav span {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 #container {
-    width: 100%;
+  width: 100%;
 }
 
 #visual {
-    height: 300px;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: 50%;
-    background-position-y: 30%;
+  height: 300px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 50%;
+  background-position-y: 30%;
 
-    position: relative;
+  position: relative;
 
-    padding: 200px 100px 200px 100px;
+  padding: 200px 100px 200px 100px;
 
-    background-image: url("https://moonsterleather.com/cdn/shop/articles/creative_writing_journal_1080x.jpg?v=1695818824");
-    background-position: center;
-    background-size: cover;
+  background-image: url("https://moonsterleather.com/cdn/shop/articles/creative_writing_journal_1080x.jpg?v=1695818824");
+  background-position: center;
+  background-size: cover;
 }
 
 #title_1 {
-    color: white;
-    font-size: 100px;
+  color: white;
+  font-size: 100px;
 }
 
 #title_2 {
-    color: white;
-    font-size: 50px;
+  color: white;
+  font-size: 50px;
 }
 
 #firstpart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #visitor {
-    margin: 20px;
-    padding: 20px 0 20px 0;
-    width: 800px;
-    background-color: rgba(0, 0, 0, 0.068);
-    border-radius: 10px;
+  margin: 20px;
+  padding: 20px 0 20px 0;
+  width: 800px;
+  background-color: rgba(0, 0, 0, 0.068);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #login {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#login>input {
-    background-color: transparent;
-    border-width: 0 0 1px 0;
-    padding: 5px;
-    margin: 5px;
+#login > input {
+  background-color: transparent;
+  border-width: 0 0 1px 0;
+  padding: 5px;
+  margin: 5px;
 }
 
 #comment {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#comment>input {
-    background-color: white;
-    border: none;
-    height: 100px;
-    width: 600px;
-    padding: 5px;
-    margin: 5px;
+#comment > input {
+  background-color: white;
+  border: none;
+  height: 100px;
+  width: 600px;
+  padding: 5px;
+  margin: 5px;
 }
 
-#comment>button {
-    background-color: black;
-    border: none;
-    color: white;
-    border-radius: 50px;
+#comment > button {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 50px;
 
-    padding: 5px;
-    margin: 5px;
-    cursor: pointer;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
 }
 
 #secondpart {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #commentlist {
-    width: 800px;
-    min-height: 100px;
-    background-color: rgba(0, 0, 0, 0.068);
-    border-radius: 10px;
-    padding-inline-start: 0px;
-
+  width: 800px;
+  min-height: 100px;
+  background-color: rgba(0, 0, 0, 0.068);
+  border-radius: 10px;
+  padding-inline-start: 0px;
 }
 
-#commentlist>li {
-    list-style: none;
-    margin: 20px;
-    padding: 0 0 20px 0;
+#commentlist > li {
+  list-style: none;
+  margin: 20px;
+  padding: 0 0 20px 0;
 
-    border: solid rgb(150, 150, 150);
-    border-width: 0px 0px 1px 0px;
-    text-indent: 15px;
-
+  border: solid rgb(150, 150, 150);
+  border-width: 0px 0px 1px 0px;
+  text-indent: 15px;
 }
 
 .newbtn {
-    border: none;
-    float: right;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    margin: 0 0 0 10px;
-    filter: grayscale(100%);
-    cursor: pointer;
+  border: none;
+  float: right;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin: 0 0 0 10px;
+  filter: grayscale(100%);
+  cursor: pointer;
 }
 
 .newbtn2 {
-    border: none;
-    float: right;
-    color: rgb(0, 0, 0);
-    font-size: 15px;
-    margin: 0 0 0 10px;
-    filter: grayscale(100%);
-    cursor: pointer;
+  border: none;
+  float: right;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin: 0 0 0 10px;
+  filter: grayscale(100%);
+  cursor: pointer;
 }
 
 #footer {
-    padding: 50px 0;
-    width: 100%;
-    background-color: #fff;
-    text-align: center;
+  border-top: 1px solid rgb(236, 236, 236);
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
 }
 
 .modal {
-    /*팝업 배경*/
-    display: none;
-    /*평소에는 보이지 않도록*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.5);
-    
+  /*팝업 배경*/
+  display: none;
+  /*평소에는 보이지 않도록*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1500px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .modal.on {
-    display: block;
+  display: block;
 }
 
 .modal .modal_popup {
-    /*팝업*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 20px;
-
+  /*팝업*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 20px;
 }
 
-.modal .modal_popup .close_btn, .yes_btn {
-    display: block;
-    padding: 10px 20px;
-    background-color: rgb(116, 0, 0);
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    transition: box-shadow 0.2s;
+.modal .modal_popup {
+  display: block;
+  padding: 10px 20px;
+  height: 125px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.modify_btn,
+.delete_btn,
+.close_btn {
+  padding: 10px 20px;
+  background-color: rgb(116, 0, 0);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.modal_title,
+.modal_input_box {
+  margin: 5px;
+}
+
+#modifycomment,
+#pwcheck {
+  height: 25px;
+}
+
+.button_warp {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.part_wrapper {
+  height: 50%;
+  overflow: auto;
+  margin-bottom: 20px;
 }
