@@ -29,9 +29,11 @@ const db = getFirestore(app);
 
 $("#cheer").click(async function () {
   let comment = $("#compliments").val();
+  let pwd = $(".input_password").val();
 
   let doc = {
     comment: comment,
+    password: pwd,
     timeStamp: new Date().getTime(),
   };
   if (!comment) {
@@ -51,7 +53,6 @@ let docs = await getDocs(
 docs.forEach((doc) => {
   let row = doc.data();
   let id = doc.id;
-
   let comment = row["comment"];
   let temp_html = `
           <div id="user_comment_box">
@@ -84,16 +85,26 @@ for (let index = 0; index < removeBtn.length; index++) {
 const modal = document.querySelector(".modal");
 const modalClose = document.querySelector(".close_btn");
 const modifyBtn = document.querySelectorAll(".modify_btn");
+const modalInput = document.querySelector(".modal_input");
 
 for (let index = 0; index < modifyBtn.length; index++) {
   modifyBtn[index].addEventListener("click", function () {
+    modalInput.setAttribute("data-comment-id", modifyBtn[index].id);
     modal.style.display = "block";
   });
 }
 
-modalClose.addEventListener("click", function () {
+modalClose.addEventListener("click", async function () {
   let comment = $(".modal_input").val();
-  modal.style.display = "none";
-  alert("수정완료!");
-  window.location.reload();
+  const modalId = modalInput.dataset.commentId;
+  let docs = await getDocs(collection(db, "comment"));
+  docs.forEach(async (e) => {
+    if (modalId === e.id) {
+      const docRef = doc(db, "comment", e.id);
+      await updateDoc(docRef, { comment: comment });
+      modal.style.display = "none";
+      alert("수정완료!");
+      window.location.reload();
+    }
+  });
 });
