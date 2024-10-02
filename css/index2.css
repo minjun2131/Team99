@@ -13,14 +13,12 @@
 }
 
 body {
-    margin: 50px;
     background-color: rgb(20, 20, 20);
 
 }
 
 #all {
 
-    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -40,6 +38,8 @@ body {
     align-items: center;
 
     position: relative;
+
+    margin: 0 0 200px 0;
 }
 
 #mypic {
