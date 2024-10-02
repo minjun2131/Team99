@@ -4,37 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>[1조]흑백요리사</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index2.css">
+
 </head>
+
 <body>
     <div id="wrap">
-        <!-- header 시작 -->
         <div id="header">
             <header class="header_warp">
-                <!-- 비둘기 -->
                 <div class="header_img_box">
-                   <a class="img_a_tag" href="./"><img src='img/h1.gif'/></a>
-            </div>
-            <!-- 시간, 날짜 -->
-            <div class="tw_wrapper">
-                <div class="todays_box">
-                  <span class="today"></span>
-                  <span class="clock"></span>
+                    <a class="img_a_tag" href="./"><img src='img/h1.gif' /></a>
                 </div>
-                <div class="weathers_box">
-                  <span class="city"></span>
-                  <span class="weather"></span>
-                  <span class="temperature"></span>
+                <div class="tw_wrapper">
+                    <div class="todays_box">
+                        <span class="today"></span>
+                        <span class="clock"></span>
+                    </div>
+                    <div class="weathers_box">
+                        <span class="city"></span>
+                        <span class="weather"></span>
+                        <span class="temperature"></span>
+                    </div>
                 </div>
-              </div>
-              <!-- 링크 -->
                 <div id="nav">
-                        <a href="./members.html">Members</a>
-                        <a href="./blogs.html">Blogs</a>
-                    </div>                    
+                    <a href="./members.html">Members</a>
+                    <a href="./blogs.html">Blogs</a>
+                </div>
             </header>
-             <!-- header 끝 -->
         </div>
         <div id="container">
             <container>
@@ -47,44 +45,95 @@
                 <section id="con-wrap">
                     <div class="cont">
                         <h2>Self Introduction</h2>
-                        <div class='con con-left'>
-                            <div class="chk"></div>
-                            <div class="text">
-                                <h3>자기소개</h3>
-                                <p>내용</p>
+                        <div id="all">
+                            <div id="card">
+                                <img id=mypic
+                                    src="https://upload.wikimedia.org/wikipedia/ko/d/d4/%EC%9A%94%EC%8B%9C.png">
+                                <div id="text">
+                                    <div id="titles">
+                                        <div id="title1">I know you are scared,</div>
+                                        <div id="title2">but you can handle this.</div>
+                                    </div>
+                                    <div id="contents" class="specialani">
+                                        <div id="mythings">
+                                            <div id="name">강민정</div>
+                                            <div id="greeting">안녕하세요.</div>
+                                        </div>
+                                        <button id="close">✕</button>
+                                    </div>
+                                    <button class="hidden" id="open">더 알아보기</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="con con-right">
-                            <div class="text">
-                                <h3>자기소개</h3>
-                                <p>내용</p>
+
+                            <div id="card">
+                                <div id="text">
+                                    <div id="titles">
+                                        <div id="title1">I know you are scared,</div>
+                                        <div id="title2">but you can handle this.</div>
+                                    </div>
+                                    <div id="contents" class="specialani">
+                                        <div id="mythings">
+                                            <div id="name">김호준</div>
+                                            <div id="greeting">안녕하세요.</div>
+                                        </div>
+                                        <button id="close">✕</button>
+                                    </div>
+                                    <button class="hidden" id="open">더 알아보기</button>
+                                </div>
+                                <img id=mypic src="img/pngegg.png">
                             </div>
-                            <div class="chk"></div>     
-                        </div>
-                        <div class='con con-left'>
-                            <div class="chk"></div>
-                            <div class="text">
-                                <h3>자기소개</h3>
-                                <p>내용</p>
+
+                            <div id="card">
+                                <img id=mypic src="img/ahh.jpg">
+                                <div id="text">
+                                    <div id="titles">
+                                        <div id="title1">I know you are scared,</div>
+                                        <div id="title2">but you can handle this.</div>
+                                    </div>
+                                    <div id="contents" class="specialani">
+                                        <div id="mythings">
+                                            <div id="name">안현희</div>
+                                            <div id="greeting">안녕하세요.</div>
+                                        </div>
+                                        <button id="close">✕</button>
+                                    </div>
+                                    <button class="hidden" id="open">더 알아보기</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="con con-right">
-                            <div class="text">
-                                <h3>자기소개</h3>
-                                <p>내용</p>
+
+                            <div id="card">
+                                <div id="text">
+                                    <div id="titles">
+                                        <div id="title1">I know you are scared,</div>
+                                        <div id="title2">but you can handle this.</div>
+                                    </div>
+                                    <div id="contents" class="specialani">
+                                        <div id="mythings">
+                                            <div id="name">정종하</div>
+                                            <div id="greeting">안녕하세요.</div>
+                                        </div>
+                                        <button id="close">✕</button>
+                                    </div>
+                                    <button class="hidden" id="open">더 알아보기</button>
+                                </div>
+                                <img id=mypic src="img/jjh.png">
+
                             </div>
-                            <div class="chk"></div>     
+
                         </div>
                     </div>
-                </section>
+
         </div>
-        <footer id="footer">
-            © 2024 by Graphic & Art. Proudly created with min.jun
-        </footer>
+        </section>
     </div>
-<script src="./JS/index.js"></script>
-<script src="./JS/clock.js"></script>
-<script src="./JS/weather.js"></script>
+    <footer id="footer">
+        © 2024 by Graphic & Art. Proudly created with min.jun
+    </footer>
+    </div>
+    <script src="./JS/index.js"></script>
+    <script src="./JS/clock.js"></script>
+    <script src="./JS/weather.js"></script>
+    <script src="./JS/index2.js"></script>
 
 </body>
 </html>
