@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방명록 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <header>
+                <h1><img src='img/h1.gif' href="로고_이미지" /></h1>
+                <div id="nav">
+                    <nav><span>Team</span><span>Members</span><span>News</span></nav>
+                </div>
+            </header>
+        </div>
+        <div id="container">
+            <div id="visual">
+                <div id=title_1>방명록</div>
+                <p id="title_2">당신의 코멘트를 기다립니다!</p>
+            </div>
+        </div>
+        <div id="firstpart">
+            <div id="visitor">
+                <div id="login">
+                    <input id="id" placeholder="id" type="text">
+                    <input id="pw" placeholder="pw" type="text">
+                </div>
+                <div id="comment">
+                    <input id="commentValue" placeholder="comment" type="text">
+                    <button id="save">저장</button>
+                </div>
+            </div>
+        </div>
+        <div id="secondpart">
+            <ul id="commentlist"></ul>
+
+        </div>
+        <div class="modal">
+            <div class="modal_popup">
+                <h3>삭제를 원하시면 비밀번호를 입력하세요</h3>
+                <input id="pwcheck" placeholder="pw" type="text">
+                <button type="button" class="yes_btn">확인</button>
+                <button type="button" class="close_btn">닫기</button>
+            </div>
+        </div>
+        <footer id="footer">
+            © 2024 by Graphic & Art. Proudly created with min.jun
+        </footer>
+    </div>
+</body>
+<script type="module" src="script.js"></script>
