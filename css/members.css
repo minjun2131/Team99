@@ -43,6 +43,14 @@ button {
   cursor: pointer;
 }
 
+.chess_white > button > img:active {
+  background-color: rgb(37, 147, 255);
+}
+
+.chess_black > button > img:active {
+  background-color: rgb(37, 147, 255);
+}
+
 .display {
   display: flex;
   justify-content: center;
@@ -94,6 +102,10 @@ button {
   border: none;
   color: white;
   border-radius: 5px;
+}
+
+.instagram_close_btn:active {
+  background-color: red;
 }
 
 .instagram_img {
