@@ -3,128 +3,127 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 #all {
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(20, 20, 20); */
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(20, 20, 20); */
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 .card,
 .card34 {
-    padding: 30px 30px 0px 30px;
-    height: 100%;
+  padding: 30px 30px 0px 30px;
+  height: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #card1,
 #card2,
 #card3,
 #card4 {
-    width: 50%;
-    text-align: center;
-    height:351px;
-    margin: 0 0 100px 0;
+  width: 50%;
+  text-align: center;
+  height: 351px;
+  margin: 0 0 100px 0;
 }
 
 .specialani {
-    opacity: 0;
-    animation: fadein 0.3s ease-in normal forwards;
+  opacity: 0;
+  animation: fadein 0.3s ease-in normal forwards;
 }
 
 #mypic,
 #mypic2,
 #mypic3,
 #mypic4 {
-    padding: 0 0 30px 0;
-    height: 150px;
-    bottom: 0px;
+  padding: 0 0 30px 0;
+  height: 150px;
+  bottom: 0px;
 }
 
 #title1,
 #title2,
 #title3,
 #title4 {
-    color: white;
-    margin: 0 0 30px 0;
+  color: white;
+  margin: 0 0 30px 0;
 
-    font-family: "Noto Sans KR", sans-serif;
-    font-size: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 50px;
 }
 
 #contents,
 #contents2,
 #contents3,
 #contents4 {
-    font-family: "Noto Sans KR", sans-serif;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.5);
+  font-family: "Noto Sans KR", sans-serif;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
 
-    padding: 10px;
-    border-radius: 5px;
+  padding: 10px;
+  border-radius: 5px;
 
-    position: relative;
+  position: relative;
 
-    height: 100%;
-    width: 90%;
+  height: 100%;
+  width: 90%;
 
-    overflow-y: auto;
-
+  overflow-y: auto;
 }
 
 #greeting,
 #greeting2,
 #greeting3,
 #greeting4 {
-    margin: 0 0 20px 0;
-    font-size: 20px;
+  margin: 0 0 20px 0;
+  font-size: 20px;
 }
 
 #close,
 #close2,
 #close3,
 #close4 {
-    border: 0;
-    background-color: transparent;
-
-    position: absolute;
-    top: 0;
-    right: 0;
+  border: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
 }
 
 #open,
 #open2,
 #open3,
 #open4 {
-    border: 1px solid white;
-    background-color: rgba(0, 0, 0, 0.281);
-    font-family: "Noto Sans KR", sans-serif;
-    color: white;
-    padding: 7px 15px 7px 15px;
-    border-radius: 50px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.281);
+  font-family: "Noto Sans KR", sans-serif;
+  color: white;
+  padding: 7px 15px 7px 15px;
+  border-radius: 50px;
 }
 
 .info_box {
-    text-align: left;
+  text-align: left;
 }
 
 .info_name {
-    font-weight: bold;
-    width: 100px;
-    float: left;
+  font-weight: bold;
+  width: 100px;
+  float: left;
 }
