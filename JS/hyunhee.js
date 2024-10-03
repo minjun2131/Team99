@@ -20,7 +20,7 @@ const infoItems = [[
   { name: "장점 ", description: "항상 최선을 다합니다." },
   { name: "협업 스타일 ", description: "팀워크와 소통을 굉장히 중요시 여깁니다." },
   { name: "좋아하는 것 ", description: "걷기" },
-  { name: "하고 싶은 말", description: "수료하고 취업하는 그 날까지 모두 최선을 다합시다! 그리고 깨알같이 공유합시다!" },
+  { name: "하고 싶은 말", description: "모든 고난에는 배움이 있다고 했습니다. 다 같이 힘내요!" },
 ], [
   { name: "이름 ", description: "정종하" },
   { name: "MBTI ", description: "ENFJ" },
