@@ -2,9 +2,9 @@ const infoItems = [[
   { name: "이름 ", description: "강민정" },
   { name: "MBTI ", description: "INTJ" },
   { name: "장점 ", description: "적극적" },
-  { name: "협업 스타일 ", description: "최선을 다하겠습니다." },
-  { name: "좋아하는 것 ", description: "걷기" },
-  { name: "하고 싶은 말", description: "최선을 다하겠습니다." },
+  { name: "협업 스타일 ", description: "적절한 때는 있지만 필요없는 의견은 없다!" },
+  { name: "좋아하는 것 ", description: "재밌는 운동(수영, 등산, 스쿼시, 클라이밍...), 디저트!!" },
+  { name: "하고 싶은 말", description: "체인소맨 작가의 영화 '룩백'을 봐주세요." },
 ],
 [
   { name: "이름 ", description: "김호준" },
