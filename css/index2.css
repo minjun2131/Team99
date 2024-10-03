@@ -22,7 +22,8 @@
     display: none;
 }
 
-#card {
+.card,
+.card34 {
     padding: 30px 30px 0px 30px;
     height: 100%;
 
@@ -31,24 +32,34 @@
     align-items: center;
 }
 
-#card1{
+#card1,
+#card2,
+#card3,
+#card4 {
     width: 50%;
     text-align: center;
-
+    height:351px;
+    margin: 0 0 100px 0;
 }
 
-.specialani{
+.specialani {
     opacity: 0;
     animation: fadein 0.3s ease-in normal forwards;
 }
 
-#mypic {
+#mypic,
+#mypic2,
+#mypic3,
+#mypic4 {
     padding: 0 0 30px 0;
-    height: 300px;
+    height: 150px;
     bottom: 0px;
 }
 
-#title1 {
+#title1,
+#title2,
+#title3,
+#title4 {
     color: white;
     margin: 0 0 30px 0;
 
@@ -56,7 +67,10 @@
     font-size: 50px;
 }
 
-#contents {
+#contents,
+#contents2,
+#contents3,
+#contents4 {
     font-family: "Noto Sans KR", sans-serif;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
@@ -66,11 +80,25 @@
 
     position: relative;
 
+    height: 100%;
+    width: 90%;
+
     overflow-y: auto;
-    height: 400px;
+
 }
 
-#close {
+#greeting,
+#greeting2,
+#greeting3,
+#greeting4 {
+    margin: 0 0 20px 0;
+    font-size: 20px;
+}
+
+#close,
+#close2,
+#close3,
+#close4 {
     border: 0;
     background-color: transparent;
 
@@ -79,12 +107,24 @@
     right: 0;
 }
 
-#open {
+#open,
+#open2,
+#open3,
+#open4 {
     border: 1px solid white;
     background-color: rgba(0, 0, 0, 0.281);
     font-family: "Noto Sans KR", sans-serif;
-    color:white;
-    padding:7px 15px 7px 15px;
-    border-radius:50px;
+    color: white;
+    padding: 7px 15px 7px 15px;
+    border-radius: 50px;
 }
 
+.info_box {
+    text-align: left;
+}
+
+.info_name {
+    font-weight: bold;
+    width: 100px;
+    float: left;
+}
