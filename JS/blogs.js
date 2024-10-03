@@ -110,7 +110,7 @@ modalmodifyBtn.addEventListener("click", async function () {
   const modalId = modalInputPwd.dataset.commentId;
   let docs = await getDocs(collection(db, "comment"));
   docs.forEach(async (e) => {
-    if (!comment) {
+    if (modalId === e.id && !comment) {
       alert("수정할 값을 입력해주세요.");
     } else if (modalId === e.id && modalInputPwd.value !== e.data().pwd) {
       alert("비밀번호를 확인해주세요.");
@@ -130,9 +130,9 @@ modalDeleteBtn.addEventListener("click", async function () {
   const modalId = modalInputPwd.dataset.commentId;
   let docs = await getDocs(collection(db, "comment"));
   docs.forEach(async (e) => {
-    if (!inputPwd) {
+    if (modalId === e.id && !inputPwd) {
       alert("비밀번호를 입력해주세요.");
-    } else if (inputPwd !== e.data().pwd) {
+    } else if (modalId === e.id && inputPwd !== e.data().pwd) {
       alert("비밀번호가 다릅니다!");
     } else if (modalId === e.id && inputPwd === e.data().pwd) {
       await deleteDoc(doc(db, "comment", e.id));
