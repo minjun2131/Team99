@@ -12,12 +12,6 @@
     }
 }
 
-body {
-    background-color: rgb(20, 20, 20);
-    margin: 50px;
-
-}
-
 #all {
     justify-content: center;
     align-items: center;
@@ -30,42 +24,35 @@ body {
 
 #card {
     padding: 30px 30px 0px 30px;
-    width: 100%;
     height: 100%;
-    border-bottom: solid white 1px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
-    position: relative;
+#card1{
+    width: 50%;
+    text-align: center;
 
-    margin: 0 0 200px 0;
+}
+
+.specialani{
+    opacity: 0;
+    animation: fadein 0.3s ease-in normal forwards;
 }
 
 #mypic {
-    filter: grayscale(100);
-    padding: 0 100px 0 0;
-    height: 500px;
+    padding: 0 0 30px 0;
+    height: 300px;
     bottom: 0px;
-    opacity: 0;
-    animation: fadein 1s ease-in normal forwards;
-}
-
-#titles {
-    color: white;
-    opacity: 0;
-    animation: fadein 1s ease 0.5s normal forwards;
-    margin: 0 0 30px 0;
 }
 
 #title1 {
-    font-family: "Roboto Flex", sans-serif;
-    font-size: 50px;
-}
+    color: white;
+    margin: 0 0 30px 0;
 
-#title2 {
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
     font-size: 50px;
 }
 
@@ -73,19 +60,14 @@ body {
     font-family: "Noto Sans KR", sans-serif;
     color: black;
     background-color: rgba(255, 255, 255, 0.5);
-    width: 500px;
 
-    margin: 0 0 30px 0;
     padding: 10px;
     border-radius: 5px;
 
     position: relative;
-}
 
-#name {
-    height: 50px;
-    font-weight: bold;
-    font-size: 20px;
+    overflow-y: auto;
+    height: 400px;
 }
 
 #close {
@@ -97,7 +79,12 @@ body {
     right: 0;
 }
 
-.specialani {
-    opacity: 0;
-    animation: fadein 1s ease 1s normal forwards;
+#open {
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.281);
+    font-family: "Noto Sans KR", sans-serif;
+    color:white;
+    padding:7px 15px 7px 15px;
+    border-radius:50px;
 }
+
