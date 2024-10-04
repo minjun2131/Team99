@@ -188,7 +188,7 @@ button {
 }
 
 .logo {
-  margin-top:150px;
+  margin-top: 150px;
   margin-top: 150px;
   display: flex;
   justify-content: center;
@@ -268,16 +268,18 @@ a:focus {
 }
 
 /* 멤버스 hover 애니메이션 모음*/
-.hj_btn,.mj_btn{
-  background-color:#fff;
+.hj_btn,
+.mj_btn {
+  background-color: #fff;
 }
-.hh_btn,.jh_btn{
-  background-color:#000;
+.hh_btn,
+.jh_btn {
+  background-color: #000;
 }
 
-.root button img{
-  transition:all 0.7s ease-in-out;
+.root button img {
+  transition: all 0.7s ease-in-out;
 }
-.root button img:hover{
-  transform:rotate3d(0,-1,0,180deg);
+.root button img:hover {
+  transform: rotate3d(0, -1, 0, 180deg);
 }

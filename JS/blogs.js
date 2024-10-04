@@ -98,8 +98,11 @@ for (let index = 0; index < modifyBtn.length; index++) {
   modifyBtn[index].addEventListener("click", async function () {
     let docs = await getDocs(collection(db, "comment"));
     docs.forEach((e) => {
-      modalInput.setAttribute("data-comment-id", e.id);
-      modal.style.display = "block";
+      const buttonDatasetId = modifyBtn[index].dataset.commentId;
+      if (buttonDatasetId === e.id) {
+        modalInput.setAttribute("data-comment-id", e.id);
+        modal.style.display = "block";
+      }
     });
   });
 }
