@@ -120,10 +120,16 @@
 
 .info_box {
   text-align: left;
+  display: flex;
 }
 
 .info_name {
   font-weight: bold;
   width: 100px;
+  float: left;
+}
+
+.info_con{
+  width: 200px;
   float: left;
 }

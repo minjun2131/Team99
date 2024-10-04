@@ -63,7 +63,7 @@ for (let i = 0; i < infoItems.length; i++) {
   infoItems[i].forEach((item) => {
     const infoDiv = document.createElement("div");
     const infoName = document.createElement("p");
-    const infoContent = document.createElement("span");
+    const infoContent = document.createElement("div");
 
     infoDiv.classList.add("info_box");
     infoName.classList.add("info_name");
