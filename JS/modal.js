@@ -40,8 +40,8 @@ const infoItems = [
   ],
   [
     { name: "이름 ", description: "정종하" },
-    { name: "MBTI ", description: "INTJ" },
-    { name: "장점 ", description: "술자리 끝까지 있을 수 있음" },
+    { name: "MBTI ", description: "ISTP" },
+    { name: "장점 ", description: "신중함" },
     {
       name: "협업 스타일 ",
       description: "조용히 꾸준히 끝까지 해낼때까지 합니다",
