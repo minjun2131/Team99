@@ -18,11 +18,11 @@ const infoItems = [
   ],
   [
     { name: "이름 ", description: "김호준" },
-    { name: "MBTI ", description: "ENFJ" },
-    { name: "장점 ", description: "적극적" },
-    { name: "협업 스타일 ", description: "최선을 다하겠습니다." },
-    { name: "좋아하는 것 ", description: "걷기" },
-    { name: "하고 싶은 말", description: "최선을 다하겠습니다." },
+    { name: "MBTI ", description: "INTJ" },
+    { name: "장점 ", description: "궁금한게 많음" },
+    { name: "협업 스타일 ", description: "내가 맡은 일에 최선을 다하자" },
+    { name: "좋아하는 것 ", description: "간단한 운동, 게임, 요리, 사진, 맛집탐방" },
+    { name: "하고 싶은 말", description: "안녕하세요." },
   ],
   [
     { name: "이름 ", description: "안현희" },
