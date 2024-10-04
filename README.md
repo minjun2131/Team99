@@ -1,5 +1,5 @@
-# 🕊 CH-1. 미니 프로젝트
-## ✨ 0단계 : 목표 정하기
+# 🕊 CH-0. 미니 프로젝트
+## ✨ 목표 정하기
 - **웹 개발** 전반의 **흐름**과 **팀과의 작업**이 어떤 흐름으로 흘러가는지 이해할 수 있습니다.
 - **Modal**을 이용하여 팀원들의 정보를 화면에 구현하였습니다.
 - **오픈API**를 활용해 사용자의 **날짜 및 날씨정보**를 구현할 수 있습니다.
@@ -32,7 +32,15 @@
  - ✅ firebase는 상황에 따라서 사용
  - ✅ 패스워드가 맞을 때 변경되거나 삭제되는 기능
 
-<br>
+## 🥇팀원 소개
+| 팀장 김호준  | 팀원 안현희  | 팀원 강민정  | 팀원 정종하 |
+| :-------------: | :-------------: |:-------------: | :-------------: |
+| INTJ  | ENFJ  | INTJ  | ISTP  |
+| 🤖 |✝️  | 🐸  | 🔅🍺 |
+|  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">  | 검암동 안 집사  | <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">   | <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">  |
+
+
+---
 
   ## 🎥기능 구현
   ### - 오픈API 활용
