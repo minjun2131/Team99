@@ -98,7 +98,7 @@ for (let index = 0; index < modifyBtn.length; index++) {
   modifyBtn[index].addEventListener("click", async function () {
     let docs = await getDocs(collection(db, "comment"));
     docs.forEach((e) => {
-      const buttonDatasetId = modifyBtn[index].dataset.commentId;
+      const buttonDatasetId = modifyBtn[index].getAttribute("data-comment-id");
       if (buttonDatasetId === e.id) {
         modalInput.setAttribute("data-comment-id", e.id);
         modal.style.display = "block";
@@ -110,7 +110,7 @@ for (let index = 0; index < modifyBtn.length; index++) {
 //모달창 수정버튼
 modalmodifyBtn.addEventListener("click", async function () {
   let comment = $("#modifycomment").val();
-  const modalId = modalInputPwd.dataset.commentId;
+  const modalId = modalInputPwd.getAttribute("data-comment-id");
   let docs = await getDocs(collection(db, "comment"));
   docs.forEach(async (e) => {
     if (modalId === e.id && !comment) {
@@ -130,7 +130,7 @@ modalmodifyBtn.addEventListener("click", async function () {
 //모달창 삭제버튼
 modalDeleteBtn.addEventListener("click", async function () {
   let inputPwd = $("#pwcheck").val();
-  const modalId = modalInputPwd.dataset.commentId;
+  const modalId = modalInputPwd.getAttribute("data-comment-id");
   let docs = await getDocs(collection(db, "comment"));
   docs.forEach(async (e) => {
     if (modalId === e.id && !inputPwd) {
