@@ -15,13 +15,11 @@
 .chess_item_white {
   width: 100px;
   height: 100px;
-  background-color: white;
 }
 
 .chess_item_black {
   width: 100px;
   height: 100px;
-  background-color: black;
 }
 
 .chess_white {
@@ -190,6 +188,7 @@ button {
 }
 
 .logo {
+  margin-top:150px;
   margin-top: 150px;
   display: flex;
   justify-content: center;
@@ -266,4 +265,19 @@ a:focus {
   width: 100%;
   background-color: #fff;
   text-align: center;
+}
+
+/* 멤버스 hover 애니메이션 모음*/
+.hj_btn,.mj_btn{
+  background-color:#fff;
+}
+.hh_btn,.jh_btn{
+  background-color:#000;
+}
+
+.root button img{
+  transition:all 0.7s ease-in-out;
+}
+.root button img:hover{
+  transform:rotate3d(0,-1,0,180deg);
 }
