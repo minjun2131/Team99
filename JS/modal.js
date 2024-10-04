@@ -75,22 +75,17 @@ for (let i = 0; i < infoItems.length; i++) {
       infoDiv.appendChild(infoName);
       infoDiv.appendChild(infoContent);
     };
-
+    userInformation(item);
     if (i === 0) {
-      userInformation(item);
       infoSection.appendChild(infoDiv);
     }
-
     if (i === 1) {
-      userInformation(item);
       infoSection2.appendChild(infoDiv);
     }
     if (i === 2) {
-      userInformation(item);
       infoSection3.appendChild(infoDiv);
     }
     if (i === 3) {
-      userInformation(item);
       infoSection4.appendChild(infoDiv);
     }
   });
