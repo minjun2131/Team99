@@ -190,11 +190,8 @@ button {
 }
 
 .logo {
-<<<<<<< HEAD
-  margin-top:150px;
-=======
   margin-top: 150px;
->>>>>>> 58b2993cc29a472f22d7d741de06c4e2811bf300
+  margin-top: 150px;
   display: flex;
   justify-content: center;
   align-content: center;
