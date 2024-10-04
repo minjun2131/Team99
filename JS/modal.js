@@ -40,11 +40,17 @@ const infoItems = [
   ],
   [
     { name: "이름 ", description: "정종하" },
-    { name: "MBTI ", description: "ENFJ" },
-    { name: "장점 ", description: "적극적" },
-    { name: "협업 스타일 ", description: "최선을 다하겠습니다." },
-    { name: "좋아하는 것 ", description: "걷기" },
-    { name: "하고 싶은 말", description: "최선을 다하겠습니다." },
+    { name: "MBTI ", description: "INTJ" },
+    { name: "장점 ", description: "술자리 끝까지 있을 수 있음" },
+    {
+      name: "협업 스타일 ",
+      description: "조용히 꾸준히 끝까지 해낼때까지 합니다",
+    },
+    { name: "좋아하는 것 ", description: "낮술" },
+    {
+      name: "하고 싶은 말",
+      description: "리액트 과정 끝까지 함께 화이팅해요!",
+    },
   ],
 ];
 
@@ -63,7 +69,7 @@ for (let i = 0; i < infoItems.length; i++) {
     infoName.classList.add("info_name");
     infoContent.classList.add("info_con");
 
-    const Information = (item) => {
+    const userInformation = (item) => {
       infoName.innerText = item.name;
       infoContent.innerText = item.description;
       infoDiv.appendChild(infoName);
@@ -71,20 +77,20 @@ for (let i = 0; i < infoItems.length; i++) {
     };
 
     if (i === 0) {
-      Information(item);
+      userInformation(item);
       infoSection.appendChild(infoDiv);
     }
 
     if (i === 1) {
-      Information(item);
+      userInformation(item);
       infoSection2.appendChild(infoDiv);
     }
     if (i === 2) {
-      Information(item);
+      userInformation(item);
       infoSection3.appendChild(infoDiv);
     }
     if (i === 3) {
-      Information(item);
+      userInformation(item);
       infoSection4.appendChild(infoDiv);
     }
   });
