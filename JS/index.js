@@ -1,6 +1,6 @@
 //타이핑 효과
 const $txt = document.querySelector(".visual_comment");
-const content = "Team Sparta\n개발자를 꿈꾸는 비전공자";
+const content = "Team 99\n개발자를 꿈꾸는 비전공자";
 let contentIndex = 0;
 
 let typing = function () {
