@@ -37,6 +37,58 @@ const instagramItem = [
   },
 ];
 
+// 체스판 생성
+let chess = [];
+let modalidx = [[0,0], [1,6], [2,2], [3,4]];
+let horse = [[5,6], [7,1]];
+let modalname = ["hj_btn", "hh_btn", "mj_btn", "jh_btn"]
+for (let i = 0; i < 8; ++i)
+{
+  let line = [];
+  for (let j = 0; j < 8; ++j)
+  {
+    let chesscolor = i % 2 == 0 ? j % 2 == 0 ? "chess_white" : "chess_black" : j % 2 == 0 ? "chess_black" : "chess_white";
+
+    line.push(chesscolor);
+  }
+  chess.push(line);
+}
+
+const chessline = document.querySelector(".root");
+chessline.innerHTML = "";
+let curridx = 0, horseidx = 0;
+for (let i = 0; i < chess.length; ++i) {
+  let text = `<div class="chessline">
+  `;
+  for (let j = 0; j < chess[i].length; ++j) {
+      text += `<div class="${chess[i][j]}">
+    `;
+    if (modalidx[curridx][0] == i && modalidx[curridx][1] == j) {
+      let itemColor = chess[i][j] == "chess_white" ? "chess_item_white" : "chess_item_black";
+      let itemShape = chess[i][j] != "chess_white" ? "./img/whitehorse.png" : "./img/blackhorse.png";
+      text += `
+        <button class="${modalname[curridx]}">
+          <img class="${itemColor}" src="${itemShape}" />
+        </button>
+      `;
+      if (curridx < 3) curridx++;
+    }
+    else if (horse[horseidx][0] == i && horse[horseidx][1] == j) {
+      let itemColor = chess[i][j] == "chess_white" ? "chess_item_white" : "chess_item_black";
+      let itemShape = chess[i][j] != "chess_white" ? "./img/whitehorse.png" : "./img/blackhorse.png";
+
+      text += `
+        <img class="${itemColor}" src="${itemShape}" />
+      `;
+      if (horseidx < 1) horseidx++;
+    }
+
+    text += "</div>"
+  }
+  chessline.innerHTML += text;
+}
+//==================
+
 const khjBtn = document.querySelector(".hj_btn");
 const ahhBtn = document.querySelector(".hh_btn");
 const kmjBtn = document.querySelector(".mj_btn");
