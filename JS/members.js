@@ -114,3 +114,8 @@ instagramItem.forEach((e) => {
 closeBtn.addEventListener("click", () => {
   hideInstagram();
 });
+
+
+/* 멤버스 애니메이션 jQuery */
+
+
