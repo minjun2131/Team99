@@ -16,6 +16,8 @@
   <img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jQuery&logoColor=white">
   <img src="https://img.shields.io/badge/git-orange?style=for-the-badge&logo=git&logoColor=white">
   <img src="https://img.shields.io/badge/firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white">
+
+  
 </div>
 <br>
 
@@ -38,6 +40,8 @@
 | INTJ  | ENFJ  | INTJ  | ISTP  |
 | 🤖 |✝️  | 🐸  | 🔅🍺 |
 |  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">  | 검암동 안 집사  | <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">   | <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E">  |
+| [ <img src="https://img.shields.io/badge/github-323330?style=for-the-badge&logo=github&logoColor=white">](https://github.com/minjun2131) [ <img src="https://img.shields.io/badge/velog-323330?style=for-the-badge&logo=velog&logoColor=white">](https://velog.io/@minjun23221/posts) |[ <img src="https://img.shields.io/badge/velog-323330?style=for-the-badge&logo=github&logoColor=white">](https://github.com/ahh0619) [ <img src="https://img.shields.io/badge/velog-323330?style=for-the-badge&logo=velog&logoColor=white">](https://velog.io/@hhyun19/posts)  | [ <img src="https://img.shields.io/badge/github-323330?style=for-the-badge&logo=github&logoColor=white">](https://github.com/cara656513) [ <img src="https://img.shields.io/badge/velog-323330?style=for-the-badge&logo=velog&logoColor=white">](https://velog.io/@kang1129/posts)  | [ <img src="https://img.shields.io/badge/github-323330?style=for-the-badge&logo=github&logoColor=white">](https://github.com/Jongha56) [ <img src="https://img.shields.io/badge/titstory-323330?style=for-the-badge&logo=titstory&logoColor=white">](https://jjh0506.tistory.com/) |
+
 
 
 ---
