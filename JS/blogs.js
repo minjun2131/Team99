@@ -48,7 +48,7 @@ $("#save").click(async function () {
 });
 
 let docs = await getDocs(
-  query(collection(db, "comment"), orderBy("timeStamp"))
+  query(collection(db, "comment"), orderBy("timeStamp", "desc"))
 );
 //const q = query(collection(db, "comment"), orderBy("timeStamp"));
 //const docs = await getDocs(q);
