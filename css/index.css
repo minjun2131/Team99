@@ -130,6 +130,7 @@ img {
 
 #con-wrap .cont {
   width: 800px;
+  
 }
 
 #con-wrap h2 {
@@ -140,6 +141,7 @@ img {
   color: #fff;
   text-shadow: 0px 0px 10px black;
   border-bottom: 1px solid #ccc;
+  opacity:0;
 }
 
 .con {
