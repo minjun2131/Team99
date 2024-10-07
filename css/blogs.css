@@ -325,7 +325,8 @@ img {
   width: 600px;
   height: 15%;
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
 }
 .todays_box,
 .weathers_box {
@@ -335,7 +336,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
   font-weight: bold;
 }
 
