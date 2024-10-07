@@ -5,6 +5,7 @@
 - **오픈API**를 활용해 사용자의 **날짜 및 날씨정보**를 구현할 수 있습니다.
 - **CRUD**를 활용하고 구현할 수 있습니다.
 
+- 🎞 [ppt 링크] https://www.miricanvas.com/v/13qd7bq
 - 🔭[배포용 링크] https://minjun2131.github.io/Team99/
 <br>
 
